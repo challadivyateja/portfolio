@@ -1,66 +1,77 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Class</title>
-</head>
-<h2 style="text-align: center;font-size: xx-large; color:red"><i><u>Table</u></i></h2>
-<body>
-    <style>
-        td{
-            border: 1px solid black;
-        }
-        table{
-            background-color: lightcoral;
-            text-align: center;
-            table-layout: unset;
-        }
-    </style>
-    
-<Table style="border: 1px solid black; width: 30%;">
-    <thead >
-        <tr>
-            <th style="border: 1px solid black;">First name</th>
-            <th style="border: 1px solid black;">Last Name</th>
-            <th style="border: 1px solid black;">mail.id</th>
-            <th style="border: 1px solid black;">number mobile</th>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=display-width, initial=scale=1">
+	</head>
+	<body>
+		
+        <div class="container">
+            <div class="intro">
+    	        <img class="profile-picture" src="images/profile-picture.jpg"/>
+    	        <h1 id="My-name">John Doe</h1>
+    	        <h3>web developer at carrerfoundry</h3>
+    	        <p>{{pause and ponder}}</p>
+            </div>
 
-        </tr>
-    </thead>
-    <tbody>
 
-        <tr>
-            <td>Divya</td>
-            <td>Challa</td>
-            <td>divya@gmail.com</td>
-            <td>9012348786</td>
+            <div class="about-grid">
+    	        <div class="i-am">
+    		        <h1>I am</h1>
+    	            <ul class="about-list">
+                        <li class="about-list-item">An Engineer</li>
+    		            <li class="about-list-item">An reader</li>
+    		            <li class="about-list-item">An hobby cook</li>
+    	            </ul>
 
-        </tr>
+    	        </div>
+    	        <div class="i-like">
+    	 	        <h1>I like to </h1>
+    	            <ul class="about-list">
+    		            <li class="about-list-item">meet new people</li>
+    		            <li class="about-list-item">play guitor</li>
+    		            <li class="about-list-item">Eat icecream</li>
+    	            </ul>
+                </div>
+            </div>
 
-        <tr>
-            <td>Joel</td>
-            <td>Alberto</td>
-            <td>joel@gmail.com</td>
-            <td>9012348765</td>
-        </tr>
-        <tr>
-            <td>Kevin</td>
-            <td>Amaral</td>
-            <td >kevin@gmail.com</td>
-            <td>7212348765</td>
-
-        </tr>
-        <tr>
-            <td>Sahus</td>
-            <td>Andrade</td>
-            <td>sahus@gmail.com</td>
-            <td>8912348765</td>
-
-            
-
-        </tr>
-    </tbody>
-</Table>
-
-</body>
+            <div>
+    	        <h3 class="projects-heading">My Projects</h3>
+    	            <div class="projects-grid">    	
+    	                <img class="project-image"src="images/project-1.jpg"/>
+    	                <img class="project-image"src="images/project-2.jpg"/>
+    	                <img class="project-image"src="images/project-3.jpg"/>
+    	                <img class="project-image"src="images/project-4.jpg"/>
+    	            </div>
+                </div>
+                    <div class="links-and contact">
+                    <div class="links">
+    	                <h3>Links</h3>
+    	                <ul class="links-list">
+    		                <li>
+    			                <a href="https://github.com/<user>">Github</a>
+    		                </li>
+    		                <li>
+    			                <a href="https://twitter.com/<user>">Twitter</a>
+    		                </li>
+    		                <li>
+    			                <a href="https://linkedin.com/in/<user>">Linkedin</a>
+    		                </li>
+    	                </ul>
+                    </div>
+                    <div>
+    	                <form action="#">
+    		                <label for="email">
+    		                    Email: <input id="email" placeholder="Enter your email"/>
+    		                </label>
+    		                <label for="message">
+    		 	                Message: <textarea id="message">Your Message</textarea>
+    		                </label>
+    		                <input type="submit" value="send message">
+    	                </form>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
